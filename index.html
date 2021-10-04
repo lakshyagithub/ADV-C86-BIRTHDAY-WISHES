@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<style>
+.body_backgorund 
+	{
+		background-image:url("https://cdn.discordapp.com/attachments/894442975432704040/894590441486434394/hOye.gif");
+		background-position:center;
+		background-size:cover;
+	}
+	#myCanvas
+	{
+	   background-image: url("https://cdn.discordapp.com/attachments/894442975432704040/894590433508880394/BirthdayImage.jpg");
+	   background-position: center;
+	}
+	
+	#Mybutton{
+		 background-color: orange;
+		 border: orange;
+	}</style>
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image()">
+	<center>
+		<br><br>
+		<canvas id="myCanvas" height="400" width="800"></canvas>
+		<br>
+		<button id="Mybutton" onclick="playSound();">Dear mom</button>
+	</center>
+	<audio id="myAudio" src="https://s21.aconvert.com/convert/p3r68-cdx67/0e8dw-ewyar.mp3"></audio>
+	<script>
+	var canvas = new fabric.Canvas('myCanvas');
+		var x= document.getElementById("myAudio");
+	   
+	   function new_image()
+	   {
+		   
+		   
+	   }
+	   
+	   function playSound(){
+			x.play();
+	   }
+	   </script>
+</body>
+</html>
